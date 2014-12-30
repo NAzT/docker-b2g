@@ -1,15 +1,13 @@
-FROM fedora
+FROM centos:centos7
 MAINTAINER dkl
 
 ADD rpm_list /rpm_list
-RUN yum -y install `cat /rpm_list`; yum clean all
-RUN yum -y update; yum clean all
+RUN yum -y -q install epel-release && yum clean all
+RUN yum -y -q install `cat /rpm_list` && yum clean all
 
 RUN useradd -m -G wheel -u 1000 -s /bin/bash b2g
 RUN mkdir -p /home/b2g/devel
-ADD vimrc /home/b2g/.vimrc
 ADD bash_profile /home/b2g/.bash_profile
-ADD gitconfig /home/b2g/.gitconfig
 RUN chown -R b2g.b2g /home/b2g
 
 ADD sudoers /etc/sudoers

@@ -13,5 +13,3 @@ export CXX=/opt/gcc-4.6.4/bin/g++
 export B2G_UPDATER=1
 export PRODUCTION=1
 export MOZILLA_OFFICIAL=1
-
-

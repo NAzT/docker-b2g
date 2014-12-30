@@ -1,0 +1,6 @@
+b2g:
+  build: .
+  privileged: true
+  volumes:
+    - "/dev/bus/usb:/dev/bus/usb"
+    - "/home/dkl/devel:/home/bugzilla/devel"
