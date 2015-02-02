@@ -1,7 +1,7 @@
 #!/bin/bash
 
 B2G_BUILD_DIR=/home/b2g/devel/repos/git/B2G
-B2G_ROM_DIR=/home/b2g/devel/repos/git/docker-b2g/rom
+B2G_ROM_DIR=/home/b2g/devel/repos/git/docker-b2g/master/rom
 
 cd $B2G_ROM_DIR/build
 rsync -rvL $B2G_BUILD_DIR/out/target/product/hammerhead/system .
