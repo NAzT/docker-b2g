@@ -31,6 +31,7 @@ openssl
 patch
 perl-Digest-SHA
 readline-devel.i686
+sudo
 tar
 unzip
 wget
