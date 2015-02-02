@@ -3,4 +3,4 @@ b2g:
   privileged: true
   volumes:
     - "/dev/bus/usb:/dev/bus/usb"
-    - "/home/dkl/devel:/home/bugzilla/devel"
+    - "/home/dkl/devel:/home/b2g/devel"
